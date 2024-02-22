@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <ImageButton
+        android:id="@+id/btTel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="telanumerica"
+        app:layout_constraintBottom_toTopOf="@+id/txt_cemergencia"
+        app:layout_constraintEnd_toStartOf="@+id/btPolicia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEditar"
+        app:srcCompat="@drawable/icon_telefone"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btPolicia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btTel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btTel"
+        app:layout_constraintTop_toTopOf="@+id/btTel"
+        app:srcCompat="@drawable/icon_policia"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btWeb"
+        android:layout_width="145dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_fazerden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cemergencia"
+        app:srcCompat="@drawable/icon_exclamacao"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="57dp"
+        android:text="Editar botão Ajuda"
+        app:layout_constraintBottom_toTopOf="@+id/btTel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btAjuda"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_cemergencia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="23dp"
+        android:text="Contatos de Emergência"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btWeb"
+        app:layout_constraintEnd_toStartOf="@+id/txt_del_proximas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTel"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_del_proximas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:text="Delegacias Próximas"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_cemergencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_cemergencia"
+        app:layout_constraintTop_toTopOf="@+id/txt_cemergencia"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_fazerden"
+        android:layout_width="152dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:text="Boletim de Ocorrência"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btWeb"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btAjuda"
+        android:layout_width="118dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="48dp"
+        android:text="AJUDA"
+        app:layout_constraintBottom_toBottomOf="@+id/btEditar"
+        app:layout_constraintEnd_toStartOf="@+id/btEditar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

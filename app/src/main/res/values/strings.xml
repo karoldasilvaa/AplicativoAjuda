@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NovoApp</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar">Cadastre-se</string>
+    <string name="textCadastro">Fazer Cadastro</string>
+    <string name="tituloCadastro">Cadastre-se</string>
+    <string name="descpm">descpm</string>
+    <string name="policiaMilitar">Polícia Militar</string>
+    <string name="policiaCivil">Polícia Civil</string>
+    <string name="policiaFederal">Polícia Federal</string>
+    <string name="bombeiros">Corpo de Bombeiros</string>
+    <string name="samu">Samu</string>
+    <string name="mulher">Central de Atendimento a Mulher</string>
+    <string name="denuncia">Disque Denûcia</string>
+    <string name="defesa">Defesa Civil</string>
+    <string name="direitos">Disque Direitos Humanos</string>
+    <string name="transportePublico">Transporte Público</string>
+    <string name="vida">Linha da Vida - Ministério da Saúde</string>
+    <string name="rodoviaria_estadual">Polícia Rodoviária Estadual</string>
+    <string name="rodoviaria_federal">Polícia Rodoviária Federal</string>
+    <string name="title_activity_delegacia_proxima">DelegaciaProxima</string>
+    <string name="title_activity_mapa">Mapa</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".Mapa">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/localizardelegacia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="38dp"
+            android:src="@drawable/ic_delegacia"
+            >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="100px"
+            android:text="Localizar Delegacias Próximas"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            />
+    </LinearLayout>
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map"
+    android:layout_below="@id/linearlayout"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    tools:context=".Mapa"/>
+
+</RelativeLayout>
+
